@@ -12,10 +12,9 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">=1.9.3"
 
   spec.add_development_dependency("rspec", "~> 3.5")
-  spec.add_development_dependency("sinatra")
   spec.add_development_dependency("shotgun")
   spec.add_development_dependency("puma")
 
   spec.add_dependency("digest-crc")
-  spec.add_dependency("rack")
+  spec.add_dependency("sinatra")
 end
