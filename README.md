@@ -1,8 +1,10 @@
 ## buildkite-trace
 
-A mini rack app that accepts buildkite webhooks and submits them to a datadog agent as traces.
+If you want to get your build time under control, first you need to measure it.
 
-The traces become available in the datadob web UI, and look something like this:
+This is a mini rack app that accepts buildkite webhooks and submits them to a datadog agent as traces.
+
+The traces become available in the datadog web UI, and look something like this:
 
 ![Build waterfall](images/build-waterfall.png)
 
@@ -24,6 +26,12 @@ Then create a `config.ru` file in the same directory, with the following content
 Finally, run this:
 
     bundle exec rackup
+
+If you have an alternative method of running  rack apps, that should work fine
+too. A popular option is puma - add it to your Gemfile (`gem "puma"`), and
+start the server with:
+
+    bundle exec puma
 
 ### Deployment
 
