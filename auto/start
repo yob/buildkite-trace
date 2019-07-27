@@ -1,0 +1,5 @@
+#! /bin/bash -eu
+#
+# Run a rails server in dev mode
+
+$(dirname $0)/dev shotgun --host 0.0.0.0

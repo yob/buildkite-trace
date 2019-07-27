@@ -1,0 +1,5 @@
+#! /bin/bash -eu
+#
+# Run a rails server in dev mode
+
+$(dirname $0)/dev rspec

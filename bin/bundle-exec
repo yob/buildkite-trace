@@ -1,0 +1,5 @@
+#!/bin/bash -eu
+
+bundle check || bundle install
+
+exec bundle exec "${@-bash}"

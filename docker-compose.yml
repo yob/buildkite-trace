@@ -1,0 +1,18 @@
+version: "2.1"
+
+services:
+  ruby:
+    image: ruby:2.6
+    volumes:
+      - .:/work
+      - ruby-2-6-bk-trace-gem-cache:/usr/local/bundle
+    working_dir: /work
+    command: /bin/bash
+    entrypoint: /work/bin/bundle-exec
+    environment:
+      LANG: C.UTF-8
+    ports:
+      - "9393:9393"
+
+volumes:
+  ruby-2-6-bk-trace-gem-cache: ~

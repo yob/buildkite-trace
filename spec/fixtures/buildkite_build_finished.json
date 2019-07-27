@@ -1,0 +1,91 @@
+{
+  "event": "build.finished",
+  "build": {
+    "id": "83636ec4-0643-4d4b-9576-4b4cc9416dbc",
+    "url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds/4472",
+    "web_url": "https://buildkite.com/foo/bar/builds/4472",
+    "number": 4472,
+    "state": "failed",
+    "blocked": false,
+    "message": "exp: will avoiding JS execution make this more reliable?",
+    "commit": "dbf58b93b46ae0ec2b82d85fe98f5925a946837a",
+    "branch": "master",
+    "tag": null,
+    "source": "webhook",
+    "creator": {
+      "id": "f98b5507-d9ca-4711-b5bb-f2bf145b9d13",
+      "name": "James Healy",
+      "email": "james@yob.id.au",
+      "avatar_url": "https://www.gravatar.com/avatar/febab66d54b972e5f3c04a70a5feb5b5",
+      "created_at": "2018-03-27 05:47:37 UTC"
+    },
+    "created_at": "2018-12-28 13:03:28 UTC",
+    "scheduled_at": "2018-12-28 13:03:28 UTC",
+    "started_at": "2018-12-28 13:03:32 UTC",
+    "finished_at": "2018-12-28 13:29:38 UTC",
+    "meta_data": {
+      "buildkite:git:commit": "commit dbf58b93b46ae0ec2b82d85fe98f5925a946837a\nAuthor:     James Healy <james@yob.id.au>\nAuthorDate: Sat Dec 29 00:02:56 2018 +1100\nCommit:     James Healy <james@yob.id.au>\nCommitDate: Sat Dec 29 00:02:56 2018 +1100\n\n    exp: will avoiding JS execution make this more reliable?"
+    },
+    "pull_request": null
+  },
+  "pipeline": {
+    "id": "f7e3be00-737a-4832-8646-11ae7fad909b",
+    "url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar",
+    "web_url": "https://buildkite.com/foo/bar",
+    "name": "Bar",
+    "description": "",
+    "slug": "bar",
+    "repository": "git@github.com:yob/bar.git",
+    "branch_configuration": "",
+    "default_branch": "master",
+    "skip_queued_branch_builds": true,
+    "skip_queued_branch_builds_filter": "",
+    "cancel_running_branch_builds": false,
+    "cancel_running_branch_builds_filter": "",
+    "provider": {
+      "id": "github",
+      "settings": {
+        "trigger_mode": "code",
+        "build_pull_requests": true,
+        "pull_request_branch_filter_enabled": false,
+        "skip_pull_request_builds_for_existing_commits": true,
+        "build_pull_request_forks": false,
+        "prefix_pull_request_fork_branch_names": false,
+        "build_tags": false,
+        "publish_commit_status": true,
+        "publish_commit_status_per_step": false,
+        "separate_pull_request_statuses": false,
+        "publish_blocked_as_pending": false,
+        "repository": "yob/bar",
+        "pull_request_branch_filter_configuration": ""
+      },
+      "webhook_url": "https://webhook.buildkite.com/deliver/849a6755fd449c310b936150fd3585e42070c1712b7c52f757"
+    },
+    "builds_url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds",
+    "badge_url": "https://badge.buildkite.com/12de09c168b7ad23e83e96c62be7698f3d1102faea93b60803.svg",
+    "created_at": "2016-05-25 04:34:52 UTC",
+    "scheduled_builds_count": 0,
+    "running_builds_count": 1,
+    "scheduled_jobs_count": 4,
+    "running_jobs_count": 6,
+    "waiting_jobs_count": 0,
+    "steps": [
+      {
+        "type": "script",
+        "name": ":pipeline:",
+        "command": ".buildkite/upload-pipeline",
+        "artifact_paths": "",
+        "branch_configuration": "",
+        "env": {},
+        "timeout_in_minutes": null,
+        "agent_query_rules": [],
+        "concurrency": null,
+        "parallelism": null
+      }
+    ]
+  },
+  "sender": {
+    "id": "f98b5507-d9ca-4711-b5bb-f2bf145b9d13",
+    "name": "James Healy"
+  }
+}

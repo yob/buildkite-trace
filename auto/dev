@@ -1,0 +1,7 @@
+#! /bin/bash -eu
+#
+# Operate in development environment
+
+cd $(dirname $0)/..
+
+docker-compose run --service-ports --rm ruby "${@-bash}"

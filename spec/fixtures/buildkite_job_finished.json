@@ -1,0 +1,141 @@
+{
+  "event": "job.finished",
+  "job": {
+    "id": "db30e1c2-7200-49db-b3f3-85edcbedec6e",
+    "type": "script",
+    "name": ":rspec: Run Spec Group 1",
+    "agent_query_rules": [
+      "queue=default"
+    ],
+    "state": "passed",
+    "build_url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds/4474",
+    "web_url": "https://buildkite.com/foo/bar/builds/4474#db30e1c2-7200-49db-b3f3-85edcbedec6e",
+    "log_url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds/4474/jobs/db30e1c2-7200-49db-b3f3-85edcbedec6e/log",
+    "raw_log_url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds/4474/jobs/db30e1c2-7200-49db-b3f3-85edcbedec6e/log.txt",
+    "artifacts_url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds/4474/jobs/db30e1c2-7200-49db-b3f3-85edcbedec6e/artifacts",
+    "command": "./auto/run-tests",
+    "exit_status": 0,
+    "artifact_paths": "reports/*;",
+    "agent": {
+      "id": "673cacbc-1920-4b4b-8673-a9a0beb87822",
+      "url": "https://api.buildkite.com/v2/organizations/foo/agents/673cacbc-1920-4b4b-8673-a9a0beb87822",
+      "web_url": "https://buildkite.com/organizations/foo/agents/673cacbc-1920-4b4b-8673-a9a0beb87822",
+      "name": "build-robot-himem-5cd88946-g74t6-1",
+      "connection_state": "connected",
+      "ip_address": "35.189.61.14",
+      "hostname": "build-robot-himem-5cd88946-g74t6",
+      "user_agent": "buildkite-agent/3.6.0.2618 (linux; amd64)",
+      "version": "3.6.0",
+      "creator": null,
+      "created_at": "2018-12-28 12:19:02 UTC",
+      "job": null,
+      "last_job_finished_at": "2018-12-28 13:26:11 UTC",
+      "priority": 0,
+      "meta_data": [
+        "queue=default",
+        "himem=true"
+      ]
+    },
+    "created_at": "2018-12-28 13:21:40 UTC",
+    "scheduled_at": "2018-12-28 13:17:08 UTC",
+    "started_at": "2018-12-28 13:23:43 UTC",
+    "finished_at": "2018-12-28 13:26:11 UTC",
+    "runnable_at": "2018-12-28 13:21:40 UTC",
+    "retried": false,
+    "retried_in_job_id": null,
+    "retries_count": null,
+    "parallel_group_index": 1,
+    "parallel_group_total": 5
+  },
+  "build": {
+    "id": "464b5536-643c-4d70-bdaf-cb50660099f5",
+    "url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds/4474",
+    "web_url": "https://buildkite.com/foo/bar/builds/4474",
+    "number": 4474,
+    "state": "running",
+    "blocked": false,
+    "message": "exp: will avoiding JS execution make this more reliable?",
+    "commit": "f9df15515206cf6d0ae552391b364fb3414c7958",
+    "branch": "master",
+    "tag": null,
+    "source": "webhook",
+    "creator": {
+      "id": "f98b5507-d9ca-4711-b5bb-f2bf145b9d13",
+      "name": "James Healy",
+      "email": "james@yob.id.au",
+      "avatar_url": "https://www.gravatar.com/avatar/febab66d54b972e5f3c04a70a5feb5b5",
+      "created_at": "2018-03-27 05:47:37 UTC"
+    },
+    "created_at": "2018-12-28 13:17:08 UTC",
+    "scheduled_at": "2018-12-28 13:17:07 UTC",
+    "started_at": "2018-12-28 13:21:31 UTC",
+    "finished_at": null,
+    "meta_data": {
+      "buildkite:git:commit": "commit f9df15515206cf6d0ae552391b364fb3414c7958\nAuthor:     James Healy <james@yob.id.au>\nAuthorDate: Sat Dec 29 00:02:56 2018 +1100\nCommit:     James Healy <james@yob.id.au>\nCommitDate: Sat Dec 29 00:16:47 2018 +1100\n\n    exp: will avoiding JS execution make this more reliable?"
+    },
+    "pull_request": null
+  },
+  "pipeline": {
+    "id": "f7e3be00-737a-4832-8646-11ae7fad909b",
+    "url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar",
+    "web_url": "https://buildkite.com/foo/bar",
+    "name": "Bar",
+    "description": "",
+    "slug": "bar",
+    "repository": "git@github.com:yob/bar.git",
+    "branch_configuration": "",
+    "default_branch": "master",
+    "skip_queued_branch_builds": true,
+    "skip_queued_branch_builds_filter": "",
+    "cancel_running_branch_builds": false,
+    "cancel_running_branch_builds_filter": "",
+    "provider": {
+      "id": "github",
+      "settings": {
+        "trigger_mode": "code",
+        "build_pull_requests": true,
+        "pull_request_branch_filter_enabled": false,
+        "skip_pull_request_builds_for_existing_commits": true,
+        "build_pull_request_forks": false,
+        "prefix_pull_request_fork_branch_names": false,
+        "build_tags": false,
+        "publish_commit_status": true,
+        "publish_commit_status_per_step": false,
+        "separate_pull_request_statuses": false,
+        "publish_blocked_as_pending": false,
+        "repository": "yob/bar",
+        "pull_request_branch_filter_configuration": ""
+      },
+      "webhook_url": "https://webhook.buildkite.com/deliver/849a6755fd449c310b936150fd3585e42070c1712b7c52f757"
+    },
+    "builds_url": "https://api.buildkite.com/v2/organizations/foo/pipelines/bar/builds",
+    "badge_url": "https://badge.buildkite.com/12de09c168b7ad23e83e96c62be7698f3d1102faea93b60803.svg",
+    "created_at": "2016-05-25 04:34:52 UTC",
+    "env": {
+      "GITHUB_SSH_KEY": "/root/.ssh/id_rsa"
+    },
+    "scheduled_builds_count": 0,
+    "running_builds_count": 2,
+    "scheduled_jobs_count": 11,
+    "running_jobs_count": 6,
+    "waiting_jobs_count": 0,
+    "steps": [
+      {
+        "type": "script",
+        "name": ":pipeline:",
+        "command": ".buildkite/upload-pipeline",
+        "artifact_paths": "",
+        "branch_configuration": "",
+        "env": {},
+        "timeout_in_minutes": null,
+        "agent_query_rules": [],
+        "concurrency": null,
+        "parallelism": null
+      }
+    ]
+  },
+  "sender": {
+    "id": "f98b5507-d9ca-4711-b5bb-f2bf145b9d13",
+    "name": "James Healy"
+  }
+}
